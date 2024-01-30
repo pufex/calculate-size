@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <p class="paragraph">Wpisz przekątną</p>
+        <input id="diagonal" type="text" placeholder="przekątną (w calach)">
+        <p class="paragraph">Wybierz stosunek</p>
+        <div class="screen-ratios">
+            <div class="screen-ratio">
+                <input name="ratio" value="16-9" id="16-9" type="radio">
+                <label for="16-9">16:9</label>
+            </div>
+            <div class="screen-ratio">
+                <input name="ratio" value="4-3" id="4-3" type="radio">
+                <label for="4-3">4:3</label>
+            </div>
+        </div>
+        <button id="submit">Wynik</button>
+        <span id="result"></span>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
