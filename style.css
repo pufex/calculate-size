@@ -7,8 +7,9 @@
 
 body{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
     min-height: 100vh;
     width: 100%;
@@ -16,15 +17,26 @@ body{
     background-color: lightcyan;
 }
 
+header{
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: black;
+    margin: 2rem 0;
+}
+
 .container{
     display: flex;
     flex-direction: column;
     align-items: center;
     /* justify-content: center; */
-
+    box-shadow: 6px 6px 12px 12px rgba(0, 0, 0, 0.075);
     max-width: 400px;
     width: 100%;
     padding: 2rem;
+    margin: bottom 2px;
     border-radius: 15px;
     background-color: white;
 }
@@ -93,11 +105,86 @@ body{
     color: navy;
 }
 
+/* FOOTER START*/
+
+footer{
+    display: block;
+    margin-top: 2rem;
+    width: 100%;
+    background-color: black;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    background-color: black;
+    padding: 1rem 2rem;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.contacts li{
+    list-style-type: none;
+    font-size: 1rem;
+    color: white;
+}
+
+
+.contact-header{
+    font-weight: 700;
+}
+
+.contact-mail, .contact-github{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-mail{
+    color: hsl(197, 71%, 73%);
+}
+.contact-mail:hover{
+    color: hsl(197, 98%, 79%);
+}
+
+.contact-github{
+    color: hsl(60, 100%, 50%);
+}
+.contact-github:hover{
+    color: hsl(60, 92%, 69%);
+}
+
+/* FOOTER MEDIA */
+/* 
+
+footer{
+    margin-top: 0;
+} 
+
+*/
+/* FOOTER START*/
+
 @media (max-width: 600px){
+    body{
+        display: block;
+    }
+
+    header{
+        font-size: 1.75rem;
+    }
+
     .container{
         border-radius: 0;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
         width: 100%;
         max-width: 100%;
         min-height: 100vh;
+        margin-bottom: 0;
     }
+
+    footer{
+        margin-top: 0;
+    } 
 }
