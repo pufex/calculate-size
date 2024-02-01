@@ -4,6 +4,11 @@ const result = document.querySelector('#result');
 const screenRatios = document.querySelectorAll('input[name="ratio"]');
 const units = document.querySelectorAll('input[name="unit"]');
 
+const activate = document.querySelector('.activate');  
+const sheet = document.querySelector('.piece-of-paper');
+const checkUp = document.querySelector('#check-up');
+
+
 const calcSize = (h, w, d, unit) =>{
     let C = d/Math.sqrt(Math.pow(h,2) + Math.pow(w,2));
     return [(w*C*unit).toFixed(2), (h*C*unit).toFixed(2)];
@@ -38,4 +43,8 @@ submit.addEventListener("click", () => {
     result.innerHTML = `Wys: ${size[0]}, Szer: ${size[1]}`;
 })
 
+activate.addEventListener('click', () => {
+    checkUp.classList.toggle('hidden');
+    sheet.classList.toggle('hidden');
+})
 

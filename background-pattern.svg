@@ -1,0 +1,11 @@
+
+<svg width="0.5cm" height="0.5cm" viewsize="0 0 100 100" version="1.0" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" x2="0.5cm" y1="0" y2="0" stroke="skyblue" stroke-width="2"/>
+        <line x1="0" x2="0.5cm" y1="0.5cm" y2="0.5cm" stroke="skyblue" stroke-width="1"/>
+        <line x1="0" x2="0" y1="0" y2="0.5cm" stroke="skyblue" stroke-width="2"/>
+        <line x1="0.5cm" x2="0.5cm" y1="0" y2="0.5cm" stroke="skyblue" stroke-width="1"/>
+</svg>
+
+
+    
+    

@@ -13,7 +13,7 @@ body{
 
     min-height: 100vh;
     width: 100%;
-
+    background-repeat: repeat;
     background-color: lightcyan;
 }
 
@@ -28,6 +28,7 @@ header{
 }
 
 .container{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -164,6 +165,54 @@ footer{
 
 */
 /* FOOTER START*/
+
+.activate-container{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.activate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: gray;
+    border: 1px solid black;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+.check-up{
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url("check-up.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: 999;
+}
+
+.piece-of-paper{
+    display: flex;
+    width: 21cm;
+    height: 29cm;
+    transform: scale(1);
+    background-image: url("background-pattern.svg");
+    background-repeat: repeat;
+    background-color: white;
+    margin-top: 1rem;
+    /* background-position: center; */
+}
+
+.hidden{
+    display: none !important;
+}
 
 @media (max-width: 600px){
     body{
