@@ -176,21 +176,23 @@ footer{
 }
 
 .activate{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 32px;
-    height: 32px;
+    position: relative;
+    width: 16px;
+    height: 16px;
     background-color: gray;
-    border: 1px solid black;
+    border: 5px solid black;
     border-radius: 100%;
     z-index: 1;
 }
 
 .check-up{
+    position: absolute;
     display: block;
-    width: 32px;
-    height: 32px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
     background-image: url("check-up.svg");
     background-repeat: no-repeat;
     background-size: contain;
